@@ -15,7 +15,7 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import { IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { selectOpenMail } from "./features/mailSlice";
+import { selectOpenMail } from "../../features/mailSlice";
 
 function Mail() {
   const navigate = useNavigate();

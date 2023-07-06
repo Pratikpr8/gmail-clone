@@ -11,9 +11,9 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import InboxIcon from "@mui/icons-material/Inbox";
 import PeopleIcon from "@mui/icons-material/People";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
-import Section from "./Section";
-import EmailRow from "./EmailRow";
-import { db } from "./firebase";
+import Section from "../Section/Section";
+import EmailRow from "../EmailRow/EmailRow";
+import { db } from "../../firebase";
 
 function EmailList() {
   const [emails, setEmails] = useState([]);
@@ -82,100 +82,49 @@ function EmailList() {
         })}
 
         <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
+          title="Test title"
+          subject="Test subject!!!!"
+          description="This is a test"
           time="10pm"
         />
 
         <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
+          title="Test title"
+          subject="Test subject!!!!"
+          description="This is a test"
           time="10pm"
         />
 
         <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
+          title="Test title"
+          subject="Test subject!!!!"
+          description="This is a test"
           time="10pm"
         />
 
         <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
+          title="Test title"
+          subject="Test subject!!!!"
+          description="This is a test"
           time="10pm"
         />
 
         <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
+          title="Test title"
+          subject="Test subject!!!!"
+          description="This is a test"
           time="10pm"
         />
-
         <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
+          title="Test title"
+          subject="Test subject!!!!"
+          description="This is a test"
           time="10pm"
         />
-
         <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
-          time="10pm"
-        />
-
-        <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
-          time="10pm"
-        />
-
-        <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
-          time="10pm"
-        />
-
-        <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
-          time="10pm"
-        />
-
-        <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
-          time="10pm"
-        />
-
-        <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
-          time="10pm"
-        />
-
-        <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
-          time="10pm"
-        />
-
-        <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamers!!!!"
-          description="this is a test"
+          title="Test title"
+          subject="Test subject!!!!"
+          description="This is a test"
           time="10pm"
         />
       </div>

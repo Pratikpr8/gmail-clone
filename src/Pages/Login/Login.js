@@ -1,8 +1,8 @@
 import React from "react";
 import "./Login.css";
 import { Button } from "@mui/material";
-import { login } from "./features/userSlice";
-import { auth, provider } from "./firebase";
+import { login } from "../../features/userSlice";
+import { auth, provider } from "../../firebase";
 import { useDispatch } from "react-redux";
 
 function Login() {
@@ -16,7 +16,7 @@ function Login() {
           login({
             displayName: user.displayName,
             email: user.email,
-            photoURL: user.photoURL,
+            photoUrl: user.photoURL,
           })
         );
       })

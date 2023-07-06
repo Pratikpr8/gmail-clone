@@ -5,7 +5,7 @@ import LabelImportantOutlinedIcon from "@mui/icons-material/LabelImportantOutlin
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { selectMail } from "./features/mailSlice";
+import { selectMail } from "../../features/mailSlice";
 
 function EmailRow({ id, title, subject, description, time }) {
   const navigate = useNavigate();
