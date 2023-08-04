@@ -19,7 +19,9 @@
 .emailRow__message {
   display: flex;
   flex: 0.8;
+  justify-content: flex-end;
   align-items: center;
+  margin: 0 20px;
   font-size: 13px;
 }
 
@@ -32,24 +34,41 @@
   padding-right: 5px;
 }
 
-.emailRow__time {
-  padding-right: 15px;
-  font-size: 9px;
-  font-weight: bold;
-}
-
 .emailRow__title {
   font-size: 13px;
   flex: 0.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .emailRow__time {
   padding-right: 15px;
-  font-size: 9px;
-  font-weight: bold;
+  font-size: 11px;
+  color: gray;
+  font-weight: 400;
 }
 
 .emailRow__description {
   font-weight: 400;
   color: gray;
+}
+
+@media screen and (max-width: 650px) {
+  .emailRow__title.smallScreenTitle {
+    display: none;
+  }
+
+  .emailRow__time {
+    padding-right: 8px;
+    font-size: 10px;
+  }
+
+  .emailRow__options > .smallScreenX {
+    display: none;
+  }
+
+  .emailRow__options {
+    margin-right: -20px;
+  }
 }

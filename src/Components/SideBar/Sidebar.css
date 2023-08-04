@@ -19,3 +19,15 @@
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 850px) {
+  .sidebar__compose {
+    position: absolute !important;
+    bottom: 75px;
+    right: 60px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}

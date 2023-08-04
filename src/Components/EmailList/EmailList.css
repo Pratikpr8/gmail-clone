@@ -37,3 +37,17 @@
 .emailList__list {
   padding-bottom: 20%;
 }
+
+.emailList__list.timeSmall {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .emailList__list {
+    display: none;
+  }
+
+  .emailList__list.timeSmall {
+    display: block;
+  }
+}

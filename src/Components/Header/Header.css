@@ -40,5 +40,39 @@
 
 .header__right {
   display: flex;
+  align-items: center;
   padding-right: 20px;
+}
+
+.avatarIcon {
+  width: 35px !important;
+  height: 35px !important;
+}
+
+.header__left > .header__leftBurger {
+  display: none;
+}
+
+.sidebar__compose.headerCompose {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .header__left > img {
+    display: none;
+  }
+
+  .header__right > .header__rightSmall {
+    display: none;
+  }
+
+  .header__left > .header__leftBurger {
+    display: block;
+  }
+  .sidebar__compose.headerCompose {
+    display: flex;
+    position: absolute !important;
+    bottom: 75px;
+    right: 80px;
+  }
 }

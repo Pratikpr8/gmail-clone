@@ -80,53 +80,20 @@ function EmailList() {
             />
           );
         })}
-
-        <EmailRow
-          title="Test title"
-          subject="Test subject!!!!"
-          description="This is a test"
-          time="10pm"
-        />
-
-        <EmailRow
-          title="Test title"
-          subject="Test subject!!!!"
-          description="This is a test"
-          time="10pm"
-        />
-
-        <EmailRow
-          title="Test title"
-          subject="Test subject!!!!"
-          description="This is a test"
-          time="10pm"
-        />
-
-        <EmailRow
-          title="Test title"
-          subject="Test subject!!!!"
-          description="This is a test"
-          time="10pm"
-        />
-
-        <EmailRow
-          title="Test title"
-          subject="Test subject!!!!"
-          description="This is a test"
-          time="10pm"
-        />
-        <EmailRow
-          title="Test title"
-          subject="Test subject!!!!"
-          description="This is a test"
-          time="10pm"
-        />
-        <EmailRow
-          title="Test title"
-          subject="Test subject!!!!"
-          description="This is a test"
-          time="10pm"
-        />
+      </div>
+      <div className="emailList__list timeSmall">
+        {emails.map(({ id, data: { to, subject, message, timestamp } }) => {
+          return (
+            <EmailRow
+              id={id}
+              key={id}
+              title={to}
+              subject={subject}
+              description={message}
+              time={new Date(timestamp?.seconds * 1000).toDateString()}
+            />
+          );
+        })}
       </div>
     </div>
   );
