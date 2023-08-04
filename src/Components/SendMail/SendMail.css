@@ -54,3 +54,9 @@
 .sendMail__message {
   flex: 1;
 }
+
+@media screen and (max-width: 850px) {
+  .sendMail {
+    width: 50%;
+  }
+}
